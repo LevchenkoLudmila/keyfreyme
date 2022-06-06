@@ -1,0 +1,39 @@
+.wrapper{
+	width: 100%;
+	max-width: 1000px;
+	margin:0 auto;
+}
+
+.content1{
+	width: 200px;
+	height: 200px;
+	background: #858456;
+	box-shadow: 10px 5px 5px red;
+	border-radius: 50%;
+	position: relative;
+	animation: test1 10s infinite;
+}
+
+.content2{
+	width: 150px;
+	height: 150px;
+	background: green;
+	box-shadow: 10px 5px 5px red;
+	position: relative;
+	animation: test2 15s infinite;
+}
+
+@keyframes test1 {
+	0% {top: 0px; background: red; width: 300px;}
+	35% {top: 100px; background: yellow; width: 100px;}
+	100% {top: 200px; background: yellow; width: 100px;}
+}
+
+@keyframes test2 {
+	0%   {top: 0px; right: 0px; background: red;}
+	25%  {top: 100px; right: 100px; background: blue;}
+	50%  {top: 200px; right: 100px; background: yellow;}
+	70%  {top: 350px; left: 400px; background: wite;}
+	85%  {top: 20px; right: 0px; background: green;}
+	100% {top: 0px; right: 0px; background: red;}
+}
